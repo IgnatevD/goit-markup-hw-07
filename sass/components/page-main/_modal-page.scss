@@ -45,6 +45,11 @@
   border-radius: 50%;
 
   fill: $titel-text-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .backdrop__close {
@@ -53,11 +58,6 @@
   margin: auto;
 
   @include transition(fill);
-}
-
-.backdrop__button:hover,
-.backdrop__button:focus {
-  fill: $accent-color;
 }
 
 .modal-form__conteiner {
@@ -109,6 +109,14 @@
 
   font-size: 16px;
   @include transition(border);
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-form__icon {
@@ -120,19 +128,11 @@
   margin-left: 12px;
 
   @include transition(fill);
-}
 
-.modal-form__input:focus + .modal-form__icon {
-  fill: $accent-color;
-  border-color: $accent-color;
-}
-
-.modal-form__input--textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
+  .modal-form__input:focus + & {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }
 
 .form-accept__label {
@@ -182,12 +182,12 @@
   border: 2px solid $titel-text-color;
   border-radius: 3px;
   margin-right: 8px;
-}
 
-.form-accept__input:checked + .form-accept__checkbox {
-  background-color: $accent-color;
-  background-image: url(../img/icon-check.svg);
-  border: 2px solid $accent-color;
-  background-size: contain;
-  background-origin: border-box;
+  .form-accept__input:checked + & {
+    background-color: $accent-color;
+    background-image: url(../img/icon-check.svg);
+    border: 2px solid $accent-color;
+    background-size: contain;
+    background-origin: border-box;
+  }
 }

@@ -18,6 +18,9 @@
 
 .partner__item {
   @include flex;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .partner__item:not(:last-child) {
@@ -33,6 +36,12 @@
   fill: $icon-color;
 
   @include transition(border);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .partner__icon {
@@ -40,10 +49,4 @@
   height: 60px;
 
   @include transition(fill);
-}
-
-.partner__link:hover,
-.partner__link:focus {
-  border: 1px solid $accent-color;
-  fill: $accent-color;
 }

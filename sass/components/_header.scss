@@ -41,29 +41,27 @@
   letter-spacing: 0.02em;
 
   @include transition();
-}
-
-.list-nav__link:hover {
-  color: $accent-color;
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .list-nav__link--current {
   color: $accent-color;
+  &::after {
+    content: " ";
+    position: absolute;
+    margin-top: 28px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+  }
 }
 
 .list-nav__item {
   position: relative;
-}
-
-.list-nav__link--current::after {
-  content: " ";
-  position: absolute;
-  margin-top: 28px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background: $accent-color;
 }
 
 /* Контакты в шапке сайта */
@@ -82,16 +80,15 @@
   fill: $praimeri-text-color;
 
   @include transition;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .list-contact__icon {
   @include transition(fill);
-}
-
-.list-contact__link:hover,
-.list-contact__link:focus {
-  color: $accent-color;
-  fill: $accent-color;
 }
 
 .list-contact__icon--email {

@@ -54,15 +54,11 @@
 /* Команда ссылки на соцсети */
 .teams__contact {
   @extend %list;
-  @include flex($align: space-between);
+  @include flex($content: space-between);
   width: 206px;
   height: 44px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.contact-teams__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .contact-teams__link {
@@ -75,6 +71,12 @@
   fill: $icon-color;
 
   @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $white-text-color;
+  }
 }
 
 .contact-teams__icon {
@@ -83,10 +85,4 @@
   padding: 12px;
 
   @include transition(fill);
-}
-
-.contact-teams__link:hover,
-.contact-teams__link:focus {
-  background-color: $accent-color;
-  fill: $white-text-color;
 }

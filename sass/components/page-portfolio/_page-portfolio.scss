@@ -38,6 +38,11 @@
   margin-bottom: 30px;
 
   @include transition(box-shadow);
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .card-portfolio__name {
@@ -79,6 +84,10 @@
   transform: translateY(100%);
 
   @include transition(transform);
+
+  .card-portfolio__item:hover & {
+    transform: translateY(0%);
+  }
 }
 
 .card-portfolio__backgroundtext {
@@ -87,11 +96,4 @@
   font-size: 18px;
   line-height: 28px;
   color: $white-text-color;
-}
-
-.card-portfolio__item:hover,
-.card-portfolio__item:hover .card-portfolio__background {
-  transform: translateY(0%);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }

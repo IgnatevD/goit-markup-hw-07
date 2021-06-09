@@ -73,8 +73,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__button:hover,
-.portfolio__button:focus {
+.portfolio__button:hover, .portfolio__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -146,8 +145,8 @@ img {
   letter-spacing: 0.02em;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 2250ms;
-          transition-duration: 2250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -160,10 +159,6 @@ img {
   color: #2196f3;
 }
 
-.list-nav__item {
-  position: relative;
-}
-
 .list-nav__link--current::after {
   content: " ";
   position: absolute;
@@ -173,6 +168,10 @@ img {
   height: 4px;
   border-radius: 2px;
   background: #2196f3;
+}
+
+.list-nav__item {
+  position: relative;
 }
 
 /* Контакты в шапке сайта */
@@ -196,25 +195,24 @@ img {
   fill: #757575;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 2250ms;
-          transition-duration: 2250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-contact__link:hover, .list-contact__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .list-contact__icon {
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 2250ms;
-          transition-duration: 2250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-contact__link:hover,
-.list-contact__link:focus {
-  color: #2196f3;
-  fill: #2196f3;
 }
 
 .list-contact__icon--email {
@@ -352,8 +350,8 @@ img {
   height: 44px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 2250ms;
-          transition-duration: 2250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -496,10 +494,15 @@ img {
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
   transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 2250ms;
-          transition-duration: 2250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-portfolio__item:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-portfolio__name {
@@ -543,10 +546,15 @@ img {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 2250ms;
-          transition-duration: 2250ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-portfolio__item:hover .card-portfolio__background {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .card-portfolio__backgroundtext {
@@ -555,13 +563,5 @@ img {
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
-}
-
-.card-portfolio__item:hover,
-.card-portfolio__item:hover .card-portfolio__background {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*# sourceMappingURL=portfolio.css.map */
