@@ -6,7 +6,7 @@
         "../sass/utils/_variables.scss",
         "../sass/utils/_mixin.scss",
         "../sass/utils/_placeholders.scss",
-        "../sass/components/page-main/_body.scss",
+        "../sass/components/_body.scss",
         "../sass/components/_header.scss",
         "../sass/components/_logo.scss",
         "../sass/components/page-main/_section-hero.scss",
