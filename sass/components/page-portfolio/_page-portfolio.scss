@@ -26,13 +26,13 @@
   margin-right: 8px;
 }
 
-.card-portfolio__list {
+.product__list {
   @include flex($content: space-between);
   flex-wrap: wrap;
   @extend %list;
 }
 
-.card-portfolio__item {
+.product__item {
   overflow: hidden;
   flex-basis: calc(100% / 3 -60px);
   margin-bottom: 30px;
@@ -45,12 +45,12 @@
   }
 }
 
-.card-portfolio__name {
+.product__name {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
-.card-portfolio__title {
+.product__title {
   margin-bottom: 4px;
 
   color: $titel-text-color;
@@ -60,24 +60,24 @@
   letter-spacing: 0.06em;
 }
 
-.card-portfolio__link {
+.product__link {
   text-decoration: none;
 }
 
-.card-portfolio__text {
+.product__text {
   color: $praimeri-text-color;
   font-size: 16px;
   line-height: 1.9;
 }
 
-.card-portfolio__conteiner {
+.product__conteiner {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
 }
 
-.card-portfolio__background {
+.product__background {
   position: absolute;
   top: 0;
   background: rgba(33, 150, 243, 0.9);
@@ -85,12 +85,12 @@
 
   @include transition(transform);
 
-  .card-portfolio__item:hover & {
+  .product__item:hover & {
     transform: translateY(0%);
   }
 }
 
-.card-portfolio__backgroundtext {
+.product__backgroundtext {
   margin: 63px 24px;
   font-style: normal;
   font-size: 18px;
